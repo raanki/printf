@@ -6,12 +6,12 @@
 /*   By: ranki <ranki@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 11:47:15 by ranki             #+#    #+#             */
-/*   Updated: 2022/11/16 07:58:25 by ranki            ###   ########.fr       */
+/*   Updated: 2022/11/24 20:00:06 by ranki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
-# define FT_PRINT_H
+# define FT_PRINTF_H
 
 # include <stdlib.h>
 # include <string.h>

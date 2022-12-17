@@ -6,7 +6,7 @@
 #    By: ranki <ranki@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/14 11:28:23 by ranki             #+#    #+#              #
-#    Updated: 2022/11/24 14:34:00 by ranki            ###   ########.fr        #
+#    Updated: 2022/11/24 20:23:01 by ranki            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ OBJ = $(SRC:.c=.o)
 FLAGS = -Wall -Werror -Wextra
 
 $(NAME):
-	gcc $(FLAG) $(SRC) -c 
+	gcc $(FLAGS) $(SRC) -c 
 	ar rc $(NAME) $(OBJ)
 	ranlib $(NAME)
 

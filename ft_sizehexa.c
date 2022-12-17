@@ -6,7 +6,7 @@
 /*   By: ranki <ranki@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 10:50:37 by ranki             #+#    #+#             */
-/*   Updated: 2022/11/16 07:51:56 by ranki            ###   ########.fr       */
+/*   Updated: 2022/11/24 20:02:17 by ranki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ static void	ft_sizehexa_m(unsigned int n)
 	}
 }
 
-static int	ft_sizehexa_maj(unsigned int n)
+static void	ft_sizehexa_maj(unsigned int n)
 {
 	char	c;
 
@@ -79,24 +79,15 @@ static int	ft_taille(unsigned int n)
 
 int	ft_sizehexa(unsigned int n, char c)
 {
-	if (c == 'x' && n >= 0)
+	if (c == 'x')
 	{
 		ft_sizehexa_m(n);
 		return (ft_taille(n));
 	}
-	if (c == 'X' && n >= 0)
+	if (c == 'X')
 	{
 		ft_sizehexa_maj(n);
 		return (ft_taille(n));
 	}
-	if (c == 'x' && n < 0)
-	{
-		ft_sizehexa_m(4294967295 + n);
-		return (ft_taille(4294967295 + n));
-	}
-	if (c == 'X' && n < 0)
-	{
-		ft_sizehexa_maj(4294967295 + n);
-		return (ft_taille(4294967295 + n));
-	}
+	return (0);
 }
